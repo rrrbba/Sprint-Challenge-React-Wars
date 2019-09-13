@@ -17,8 +17,11 @@
 .wholeCard{
   color: whitesmoke;
   margin-bottom: 2%;
-  border-bottom: 1px dashed black;
-
+  border: 2px dashed black;
+  box-sizing: border-box;
+  width: 50%;
+  padding-top: 2%;
+  margin-left: 25%;
 
 }
 
