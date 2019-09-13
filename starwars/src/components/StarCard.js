@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Card,  CardText, CardBody, CardTitle, CardSubtitle, Col
+    Card, CardBody,  CardText, CardTitle, CardSubtitle
   } from 'reactstrap';
 
 
@@ -8,17 +8,16 @@ import {
 const StarCard = props => {
     return(
         
-        <Col sm="12" md={{ size: 6, offset: 3 }} key= {props.url} className= "everyCard">
-         <Card className= "wholeCard" >
-            <CardTitle className= "titles">{props.name}</CardTitle>
+         <Card className= "wholeCard" key= {props.url}>
             <CardBody>
+            <CardTitle className= "titles">{props.name}</CardTitle>
             <CardSubtitle>Birthdate: {props.birth}</CardSubtitle>
             <CardText>Height: {props.height}</CardText>
             </CardBody>
-         </Card>
-         </Col>    
-    )
-}
+         </Card> 
+         
+    );
+};
 
 export default StarCard;
 

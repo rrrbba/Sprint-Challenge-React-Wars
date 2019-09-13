@@ -33,6 +33,6 @@ export default function StarList(){
             )
         })}
             </Row>
-        </Container>
+            </Container>
     );
 }
